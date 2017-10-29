@@ -1,0 +1,32 @@
+[
+    {
+        "personId": 2,
+        "name": "rachid",
+        "age": 40,
+        "job": "seba3"
+    },
+    {
+        "personId": 1,
+        "name": "omarinho",
+        "age": 36,
+        "job": "adjoint chef"
+    },
+    {
+        "personId": 4,
+        "name": "karim",
+        "age": 42,
+        "job": "drageur"
+    },
+    {
+        "personId": 5,
+        "name": "zaka",
+        "age": 20,
+        "job": "expert"
+    },
+    {
+        "personId": 6,
+        "name": "aberahim",
+        "age": 30,
+        "job": "boulanger"
+    }
+]

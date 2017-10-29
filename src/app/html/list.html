@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+</HEAD>
+
+<BODY>
+
+  <TABLE width="600px;" border="0">
+    <TR style="font-weight: bold;">
+      <TD width="150px">ID</TD>
+      <TD width="150px">Name</TD>
+      <TD width="150px">Age</TD>
+      <TD width="150px"> </TD>
+      <TD width="150px"> </TD>
+      <TD width="150px"> </TD>
+    </TR>
+
+    <TR *ngFor='let lst of ipersons'>
+      <TD>{{lst.personId}}</TD>
+      <TD>{{lst.name}}</TD>
+      <TD>{{lst.age}}</TD>
+      <TD style="text-align:center;">
+        <a href="/ShowPerson/{{lst.personId}}">
+          <span style="text-decoration: underline; cursor: pointer;">Show</span>
+        </a>
+      </TD>
+      <TD style="text-align:center;">
+        <a href="/UpdatePerson/{{lst.personId}}">
+          <span style="text-decoration: underline; cursor: pointer;">Update</span>
+        </a>
+      </TD>
+      <TD style="text-align:center;">
+        <a (click)=deletePerson(lst.personId)>
+          <span style="text-decoration: underline; cursor: pointer;">Delete</span>
+        </a>
+      </TD>
+    </TR>
+
+    <TR style="height:20px">
+      <TD> </TD>
+      <TD> </TD>
+      <TD> </TD>
+      <TD> </TD>
+      <TD> </TD>
+      <TD> </TD>
+    </TR>
+
+    <TR style="height:20px">
+      <TD> </TD>
+      <TD> </TD>
+      <TD> </TD>
+      <TD> </TD>
+      <TD> </TD>
+      <TD style="text-align:center;">
+        <a href="/AddPerson">
+          <span style="text-decoration: underline; cursor: pointer;">Add a person</span>
+        </a>
+      </TD>
+    </TR>
+
+  </TABLE>
+
+</BODY>
+
+</HTML>

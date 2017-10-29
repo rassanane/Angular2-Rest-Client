@@ -1,0 +1,45 @@
+<h3>
+      Add a person :
+</h3>
+<br>
+<div style="width:500px;">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+            <div class="form-group">
+                  <label for="personId">ID : </label>
+                  <input type="text" class="form-control" id="personId" required [(ngModel)]="model.personId" name="personId">
+            </div>
+
+            <div class="form-group">
+                  <label for="name">Name : </label>
+                  <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name">
+            </div>
+
+            <div class="form-group">
+                  <label for="age">Age : </label>
+                  <input type="text" class="form-control" id="age" required [(ngModel)]="model.age" name="age">
+            </div>
+
+            <div class="form-group">
+                  <label for="job">Job : </label>
+                  <input type="text" class="form-control" id="job" required [(ngModel)]="model.job" name="job">
+            </div>
+
+            <button class="btn">Add</button>
+
+      </form>
+
+      <p>
+            <font color="red">
+                  <b>{{messConfirmation}}</b>
+            </font>
+            <br>
+      </p>
+
+      <p style="text-align:right;">
+            <br>
+            <br>
+            <a href="/ListPersons" style="text-decoration: underline; cursor: pointer;">Back</a>
+      </p>
+
+</div>
