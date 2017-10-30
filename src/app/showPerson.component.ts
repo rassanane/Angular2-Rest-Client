@@ -18,6 +18,10 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
     providers: [PersonService]
 })
 
+/**
+ * A class to call a service to show dtail of a persons
+ */
+
 export class AppShowPerson {
 
     model = new Person(1, 'toto', 30, 'fofo');

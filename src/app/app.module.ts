@@ -29,9 +29,11 @@ const appRoutes: Routes = [
     bootstrap: [AppComponent]
 })
 
+/**
+ * the module component of application
+ */
 export class AppModule {
 
 
 
 }
-

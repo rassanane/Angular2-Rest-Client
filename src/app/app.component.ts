@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 	   <router-outlet></router-outlet>`,
 })
 
+/**
+ * A main component of application
+ */
 export class AppComponent { 
 	
 	name = 'Angular 2';
 
 }
-

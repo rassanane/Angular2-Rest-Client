@@ -9,7 +9,6 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
-
 @Component({
   selector: 'my-app-add',
   templateUrl: './html/add.html',
@@ -17,6 +16,9 @@ import 'rxjs/add/operator/map';
   providers: [PersonService]
 })
 
+/**
+ * A class to call a service to add person
+ */
 export class AppAddPerson {
 
   messError = 'error message !!!!';
@@ -46,7 +48,4 @@ export class AppAddPerson {
 
   }
 
-
-
 }
-

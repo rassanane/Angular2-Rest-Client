@@ -18,7 +18,9 @@ import { Router, NavigationEnd } from '@angular/router';
 
 })
 
-
+/**
+ * A class to call a service to get a persons list
+ */
 export class AppListPersons {
 
   constructor(private router: Router, private myService: PersonService) { }

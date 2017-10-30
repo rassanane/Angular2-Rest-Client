@@ -7,6 +7,9 @@ import { IPerson } from './ipersons';
 
 import { RequestOptions, Request, RequestMethod, RequestOptionsArgs } from '@angular/http';
 
+/**
+ * A service to call the rest services
+ */
 @Injectable()
 export class PersonService {
 

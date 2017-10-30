@@ -1,4 +1,7 @@
 
+/**
+ * A class to prent a person
+ */
 export class Person {
     constructor(
         public personId: number,
@@ -7,4 +10,3 @@ export class Person {
         public job: string
     ) { }
 }
-

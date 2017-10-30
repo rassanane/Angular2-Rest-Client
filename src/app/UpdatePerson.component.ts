@@ -18,6 +18,10 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
     providers: [PersonService]
 })
 
+/**
+ * A class to call a service to update a persons
+ */
+
 export class AppUpdatePerson {
 
     messError = 'error message !!!!';
@@ -60,4 +64,3 @@ export class AppUpdatePerson {
     }
 
 }
-
